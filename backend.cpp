@@ -24,6 +24,10 @@ vector<int> findSubs(const Teacher& teacher, vector<Teacher>& teachers) {
 	
 }
 
+void printTeacher(const Teacher& teacher) {
+	cout << teacher.name << endl;
+}
+
 int main() {
 	vector<Teacher> teachers;
 	//Parse spreadsheet (Henry)
