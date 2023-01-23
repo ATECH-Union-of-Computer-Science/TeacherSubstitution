@@ -17,7 +17,7 @@ int findTeacher(const vector<Teacher>& teachers, const string& name) {
 }
 
 vector<int> findSubs(const Teacher& teacher, vector<Teacher>& teachers) {
-	//Returns a vector of ints containing the index of the teacher that will fill in for an absent teacher.
+	//Returns a vector of ints containing the index of the teacher that will fill in for an absent teacher. (Kyle)
 	//If no teacher is available to sub that period, place a -1 in the index.
 	//If a period is a prep for an absent teacher, place a -2 in the index.
 	//Replace teacher's preps with the phrase "SUB" to mark preps that have already been used.
@@ -31,6 +31,13 @@ int main() {
 	
 	//User interface (Charles)
 	while (true) {
+		//Ask for an absent teacher or Q to quit
+		
+		//Check if entered teacher exists
+		
+		//Find subsitutes for each teacer
+		
+		//Display the names of teachers that can fill in for each period
 		
 	}
 	
