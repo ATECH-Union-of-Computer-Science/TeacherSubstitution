@@ -1,3 +1,4 @@
+#include <iostream>
 #include <fstream>
 
 using namespace std;
@@ -10,9 +11,14 @@ struct Teacher {
 }
 
 int main() {
-	
+	vector<Teacher> teachers;
 	//Parse spreadsheet
 	
+	
+	//User interface
+	while (true) {
+		
+	}
 	
 	return 0;
 }
