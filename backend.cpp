@@ -38,13 +38,15 @@ int main() {
 		//Ask for an absent teacher or Q to quit
 		cout << "Input absent teacher (or Q to quit)." << endl;
 		string input = "None";
-		if (toupper(input) == "Q")
+		cin >> input;
+		if (input == "Q" || input == "q")
 		{
 		    break;
 		}
 		//Check if entered teacher exists
 		while (findTeacher(teachers, input) == -1)
 		{
+		    cout << "Teacher not found. Please try again." << endl;
 		    cin >> input;
 		}
 		//Find substitutes for each teacher
