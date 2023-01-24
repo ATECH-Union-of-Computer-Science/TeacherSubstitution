@@ -10,7 +10,7 @@ struct Teacher {
 	string type;
 	string room;
 	vector<string> periods;
-}
+};
 
 int findTeacher(const vector<Teacher>& teachers, const string& name) {
 	//Returns the index of the teacher with the given name. (Junjie)
@@ -28,7 +28,7 @@ vector<int> findSubs(const Teacher& teacher, vector<Teacher>& teachers) {
 
 void resetTeachers(vector<Teacher>& teachers) {
 	//Replaces any teacher periods marked with "SUB" with "PREP" (Yu Peng)
-	
+	}	
 }
 
 void printTeacher(const Teacher& teacher) {
