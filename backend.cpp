@@ -38,23 +38,24 @@ int main() {
 		//Ask for an absent teacher or Q to quit
 		cout << "Input absent teacher (or Q to quit)." << endl;
 		string input = "None";
-		//Check if entered teacher exists
-		if (toupper(input) != "Q")
+		if (toupper(input) == "Q")
 		{
-			while (findTeacher(teachers, input) == -1)
-			{
-			    cin >> input;
-			}
-			//Find substitutes for each teacher
-			vector<int> found = findSubs(input, teachers);
-			//Display the names of teachers that can fill in for each period
-			for (int i = 0; i < found.size(); i++)
-			{
-			    if (found.at(i) != -1 && found.at(i) != -2)
-			    {
-				printTeacher(found.at(i));
-			    }
-			}
+		    break;
+		}
+		//Check if entered teacher exists
+		while (findTeacher(teachers, input) == -1)
+		{
+		    cin >> input;
+		}
+		//Find substitutes for each teacher
+		vector<int> found = findSubs(input, teachers);
+		//Display the names of teachers that can fill in for each period
+		for (int i = 0; i < found.size(); i++)
+		{
+		    if (found.at(i) != -1 && found.at(i) != -2)
+		    {
+			printTeacher(found.at(i));
+		    }
 		}
 	}
 	
