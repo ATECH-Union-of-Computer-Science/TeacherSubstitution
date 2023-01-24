@@ -26,6 +26,11 @@ vector<int> findSubs(const Teacher& teacher, vector<Teacher>& teachers) {
 	
 }
 
+void resetTeachers(vector<Teacher>& teachers) {
+	//Replaces any teacher periods marked with "SUB" with "PREP" (Yu Peng)
+	
+}
+
 void printTeacher(const Teacher& teacher) {
 	cout << teacher.name << endl;
 }
