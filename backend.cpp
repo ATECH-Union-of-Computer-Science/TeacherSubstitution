@@ -28,6 +28,11 @@ vector<int> findSubs(const Teacher& teacher, vector<Teacher>& teachers) {
 
 void resetTeachers(vector<Teacher>& teachers) {
 	//Replaces any teacher periods marked with "SUB" with "PREP" (Yu Peng)
+	for(auto & t : teachers){  
+    		for(auto & p : t.periods){
+			if(p == "SUB")
+        			p = "PREP";
+    		}
 	}	
 }
 
